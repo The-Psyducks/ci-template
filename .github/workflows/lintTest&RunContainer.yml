@@ -30,6 +30,6 @@ jobs:
       - name: Build container
         run: |
           docker compose build
-      - name: Run tests
+      - name: Run test
         run: |
-          docker compose up tests
+          docker compose up test
