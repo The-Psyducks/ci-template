@@ -21,7 +21,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: brings code
       - uses: actions/checkout@v4
       - name: Set up go
         uses: actions/setup-go@v4
