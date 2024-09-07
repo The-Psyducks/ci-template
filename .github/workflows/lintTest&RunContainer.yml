@@ -29,6 +29,7 @@ jobs:
           
       - name: Build container
         run: |
+          cd server/..
           docker compose build
       - name: Run tests
         run: |
