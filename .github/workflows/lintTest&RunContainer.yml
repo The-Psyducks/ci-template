@@ -26,9 +26,6 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: 1.23.0
-      #- name: Build container image
-       # run: |
-        #  docker compose build --no-cache
       - name: Run tests
         run: |
           docker compose up tests --exit-code-exit
