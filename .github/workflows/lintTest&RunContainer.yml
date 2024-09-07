@@ -32,4 +32,4 @@ jobs:
           #docker compose build
       - name: Run tests
         run: |
-          ls
+          ls -a ./
