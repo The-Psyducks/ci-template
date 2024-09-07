@@ -28,7 +28,7 @@ jobs:
           go-version: 1.23.0
       - name: show tree
         run: |
-          pwd
+          ls
       - name: Run tests
         run: |
           docker compose up test
