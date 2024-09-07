@@ -28,4 +28,4 @@ jobs:
           go-version: 1.23.0
       - name: Run tests
         run: |
-          docker compose up tests --exit-code-exit
+          docker compose up test
