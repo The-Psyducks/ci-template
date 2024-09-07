@@ -26,9 +26,8 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: 1.23.0
-      - name: show tree
-        run: |
-          ls
       - name: Run tests
         run: |
+          cd .
+          ls .
           docker compose up test
