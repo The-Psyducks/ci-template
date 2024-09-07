@@ -15,7 +15,7 @@ jobs:
       - name: Install golangci-lint
         run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest  
       - name: Run go linting
-        run: golangci-lint run server/src/...
+        run: golangci-lint run ./server/src/...
   test:
     runs-on: ubuntu-latest
     steps:
