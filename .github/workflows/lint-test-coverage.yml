@@ -35,5 +35,6 @@ jobs:
           docker compose up test
       - name: check coverage
         run: |
+          cd server
           coverage=$(go tool cover -func=./coverage/coverage.out | grep total | awk '{print $3}' | sed 's/%//')
           echo "coverage ${coverage}%"
