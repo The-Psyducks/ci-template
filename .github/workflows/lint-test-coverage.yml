@@ -17,7 +17,7 @@ jobs:
       - name: Run go linting
         run: |
           cd server
-          timeout 400s golangci-lint run ./... 
+          golangci-lint run --timeout=5m ./... 
   test:
     runs-on: ubuntu-latest
     steps:
