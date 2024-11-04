@@ -43,3 +43,10 @@ jobs:
             exit 1
           fi
           echo "coverage ${coverage}%"
+      
+      - name: Upload Coverage to Coveralls
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          file: coverage.out
+
